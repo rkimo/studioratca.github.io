@@ -42,7 +42,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'GrouchBt';
+    font-family: "GrouchBt";
     src: url("/fonts/grouch-bt.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
