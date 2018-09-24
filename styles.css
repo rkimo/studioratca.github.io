@@ -51,7 +51,7 @@
 
 @font-face {
     font-family: 'GrouchBt';
-    src: url("../fonts/grouch/GrouchITC.otf") format('OpenType');
+    src: url("GrouchITC.otf") format('OpenType');
     font-weight: normal;
     font-style: normal;
 }
