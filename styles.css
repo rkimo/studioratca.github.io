@@ -74,7 +74,6 @@ html {}
 
 body {
 
-    padding-bottom: 1000px;
 }
 
 a {
@@ -83,7 +82,8 @@ a {
 }
 
 img {
-    width: 250px;
+    max-width: 300px;
+    width:90%;
 }
 
 #col1,
@@ -124,7 +124,10 @@ img {
 }
 
 
+#idk {
+        padding-bottom: 1000px;
 
+}
 
 #blah {
     z-index: 1000;
@@ -134,6 +137,13 @@ img {
 
 a:hover {
     color: black !important;
+}
+footer {
+margin:auto;
+font-family: futura;
+text-align: center;
+    font-weight: 100;
+
 }
 
 
@@ -282,7 +292,6 @@ a:hover {
         align-items: center;
         margin: auto;
     }
-
 
     * {
         margin: 0;
