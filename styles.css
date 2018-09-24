@@ -45,6 +45,10 @@
     font-family: 'Grouch';
     src: url('/fonts/grouch-bt.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Grouch2';
+    src: url('/fonts/Grouch-Regular.woff') format('woff');
+}
 
 html {
 }
@@ -100,7 +104,7 @@ img {
     margin: 0 auto;
     padding-top: 20%;
     padding-bottom: 20%;
-    font-family: 'Grouch';
+    font-family: 'Grouch2';
     font-size: 70px;
     text-align: center;
 }
