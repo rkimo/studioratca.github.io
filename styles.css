@@ -47,7 +47,6 @@
 }
 
 html {
-    font-family: futura;
 }
 #introtext {
     font-weight: bold;
@@ -74,6 +73,8 @@ img {
 }
 #col1, #col2 {
     text-align: center;
+        font-family: futura;
+
 }
 
 #studiotext {
@@ -272,6 +273,7 @@ a:hover {
     }
 
     html#contactpageallcode {
+        
     }
 
     #canvas {
