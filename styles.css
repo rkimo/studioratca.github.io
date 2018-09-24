@@ -43,13 +43,7 @@
 }
 @font-face {
     font-family: "GrouchBt";
-<<<<<<< HEAD
     src: url("/fonts/grouch-bt.ttf") format('truetype');
-=======
-    src: url("fonts/grouch-bt.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
->>>>>>> 59faad28ca4628aaa5420eb67e242c8b738d0925
 }
 
 html {
