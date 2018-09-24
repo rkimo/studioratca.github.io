@@ -42,7 +42,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "GrouchBt";
+    font-family: "GrouchBt normal";
     src: url("/fonts/grouch-bt.ttf") format('truetype');
 }
 
@@ -99,7 +99,7 @@ img {
     margin: 0 auto;
     padding-top: 20%;
     padding-bottom: 20%;
-    font-family: "GrouchBt";
+    font-family: "GrouchBt normal";
     font-size: 70px;
     text-align: center;
 }
