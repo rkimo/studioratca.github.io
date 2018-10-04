@@ -1,288 +1,162 @@
-/*///////// UNIVERSAL CSS /////////*/
+    /*///////// UNIVERSAL CSS /////////*/
 
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Med-Bt.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Medium-Italic.ttf") format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Light-bt.ttf") format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Light-Italic.ttf") format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'FuturaBlack';
-    src: url("/fonts/futura/futura-black-bold.ttf") format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FuturaHeavy';
-    src: url("/fonts/futura/Futura-Heavy.otf") format('OpenType');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Bold.otf") format('OpenType');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GrouchBt';
-    src: url("GrouchITC.otf") format('OpenType');
-    font-weight: normal;
-    font-style: normal;
-}
-
-html {}
-
-#introtext {
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 0.0625em;
-    line-height: 1.1em;
-    letter-spacing: 10;
-    text-align: left;
-    max-width: 370px;
-}
-
-.contactpagetext {
-    font-size: 1.2em;
-}
-
-body {
-
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-img {
-    max-width: 300px;
-    width:90%;
-}
-
-#col1,
-#col2 {
-    text-align: center;
-    font-family: futura;
-
-}
-
-#studiotext {
-    font-family: helvetica;
-    font-weight: 300;
-    letter-spacing: 4vw;
-    font-size: 20vw;
-    padding: 40px;
-    z-index: -100;
-}
-
-.shapes {
-    max-width: 15%;
-}
-
-#shapescontainer {
-    width: 110%;
-    height: 2000px;
-    position: fixed;
-    padding-top: 10%;
-}
-
-#introimg {
-    display: block;
-    margin: 0 auto;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-family: 'GrouchBt' !important;
-    font-size: 70px;
-    text-align: center;
-}
-
-
-#idk {
-        padding-bottom: 1000px;
-
-}
-
-#blah {
-    z-index: 1000;
-    right: 5%;
-    top: 5%;
-}
-
-a:hover {
-    color: black !important;
-}
-footer {
-margin:auto;
-font-family: futura;
-text-align: center;
-    font-weight: 100;
-
-}
-
-
-/* universal CSS end */
-
-/* Extra small devices (phones, 600px and down) */
-
-.main {
-    width: 75%;
-}
-
-#idk {
-    flex-direction: column;
-    margin: auto;
-    min-width: 85%;
-}
-
-#col1,
-#col2 {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    flex-grow: 0;
-    padding: 4px 4px 4px 0px;
-}
-
-.box {
-    background-color: ;
-    margin: 2px;
-    padding: 30% 0% 30% 0%;
-
-}
-
-/******* extra small devices end *******/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    body {}
-    #idk {
-        flex-direction: column;
-        width: 70%;
+    @font-face {
+        font-family: 'Futura';
+        src: url("/fonts/futura/Futura-Med-Bt.ttf") format('truetype');
+        font-weight: normal;
+        font-style: normal;
     }
-}
 
-/******* small devices end ********/
+    @font-face {
+        font-family: 'Futura';
+        src: url("/fonts/futura/Futura-Medium-Italic.ttf") format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */
+    @font-face {
+        font-family: 'Futura';
+        src: url("/fonts/futura/Futura-Light-bt.ttf") format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
 
-@media only screen and (min-width: 768px) {
+    @font-face {
+        font-family: 'Futura';
+        src: url("/fonts/futura/Futura-Light-Italic.ttf") format('truetype');
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'FuturaBlack';
+        src: url("/fonts/futura/futura-black-bold.ttf") format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'FuturaHeavy';
+        src: url("/fonts/futura/Futura-Heavy.otf") format('OpenType');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Futura';
+        src: url("/fonts/futura/Futura-Bold.otf") format('OpenType');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'GrouchBt';
+        src: url("GrouchITC.otf") format('OpenType');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     html {}
+
+    #introtext {
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.0625em;
+        line-height: 1.1em;
+        letter-spacing: 10;
+        text-align: left;
+        max-width: 370px;
+    }
+
+    .contactpagetext {
+        font-size: 1.2em;
+    }
+
     body {}
-    .main {
-        background-color: ;
-        width: 85%;
-        justify-content: space-between;
-        margin: auto;
+
+    a {
+        color: black;
+        text-decoration: none;
     }
-    #idk {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: auto;
+
+    img {
+        max-width: 300px;
+        width: 90%;
     }
+
     #col1,
     #col2 {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 46%;
-        flex-grow: 0;
-    }
-    .box {
-        background-color: ;
-        margin: 2px;
-    }
-    #col2 {
-        padding-top: 300px;
-    }
-
-    /******* medium devices end ********/
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-        body {}
-        #col2 {
-            padding-top: 500px;
-        }
+        text-align: center;
+        font-family: futura;
 
     }
-    /******* large devices end ********/
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        body {
-            background-color: ;
-        }
-        #col1,
-        #col2 {
-            max-width: 500px;
-        }
-        #col2 {
-            padding-top: 500px;
-        }
-        body {
-            max-width: 1700px;
-            border: 0;
-        }
-    }
-    /******* extra large devices end ********/
-    /* XL, Large, medium devices that are 2 column  */
-    #box1 {}
-    #box2 {
-        line-height: 5;
-        padding-top: 700px;
-    }
-    #box3 {}
-    #box6 {
-        padding-top: 2000px;
-    }
-    #box4 {
-        padding-top: 350px;
-        line-height: 5;
-    }
-    #box5 {
-        padding-top: 1000px;
-    }
-    #col2 {
-        padding-top: 900px;
+
+    #studiotext {
+        font-family: helvetica;
+        font-weight: 300;
+        letter-spacing: 4vw;
+        font-size: 20vw;
+        padding: 40px;
+        z-index: ;
     }
 
+    .shapes {
+        max-width: 15%;
+    }
 
-    /******* 2 column end ********/
-    /* small and extra small 1 column  */
-    /******* 1 column end ********/
+    #shapescontainer {
+        width: 110%;
+        height: 2000px;
+        position: fixed;
+        padding-top: 10%;
+    }
+
+    #introimg {
+        display: block;
+        margin: 0 auto;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        font-family: 'GrouchBt' !important;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    #idk {
+        padding-bottom: 1000px;
+        padding-top:120px;
+
+    }
+
+    #blah {
+        z-index: 1000;
+        right: 5%;
+        top: 5%;
+    }
+
+    a:hover {
+        color: black !important;
+    }
+
+    footer {
+        margin: auto;
+        font-family: futura;
+        text-align: center;
+        font-weight: 100;
+        margin-bottom:  25px;
+
+    }
+
+    /* universal CSS end */
+
     /*///////// contactpage CSS /////////*/
+
     body#contactpageall {
         background-color: #F6CFB8;
         height: 100%;
         font-family: futura;
         font-weight: 100;
     }
+
     #flexwrapper {
         display: flex;
         height: 100vh;
@@ -291,6 +165,8 @@ text-align: center;
         justify-content: space-evenly;
         align-items: center;
         margin: auto;
+        text-align: justify;
+
     }
 
     * {
@@ -301,9 +177,10 @@ text-align: center;
     html#contactpageallcode {}
 
     #canvas {
-        z-index: 100;
+        z-index: 0;
         position: fixed;
     }
+
     #backarrow {
         width: 120px;
         position: fixed;
@@ -311,5 +188,173 @@ text-align: center;
         z-index: 100;
     }
 
+    #studioemail {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
 
     /********* contactpage CSS end ********/
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+    .main {
+        width: 75%;
+    }
+
+    #idk {
+        flex-direction: column;
+        margin: auto;
+        min-width: 85%;
+    }
+
+    #col1,
+    #col2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding: 4px 4px 4px 0px;
+    }
+
+    .box {
+        background-color: ;
+        margin: 2px;
+        padding: 30% 0% 30% 0%;
+    }
+            #flexwrapper {
+        display:block;
+        padding-top:10%;
+        height: inherit;
+        width: 85%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+                padding-bottom: 10%;
+
+    }
+        .mobilecontainer {
+            margin: 10% 0% 10% 0%;
+            text-align: justify;
+        
+        }
+        #introtext {
+                text-align: justify;
+        }
+    #backarrow {
+        width: 10%;}
+}
+    /******* extra small devices end *******/
+
+
+
+
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+
+    @media only screen and (min-width: 601px) {
+        body {}
+        #idk {
+            flex-direction: column;
+            width: 70%;
+        }
+        
+        
+        
+    }
+
+    /******* small devices end ********/
+
+    /* Medium devices (landscape tablets, 768px and up) */
+
+    @media only screen and (min-width: 768px) {
+        html {}
+        body {}
+        .main {
+            background-color: ;
+            width: 85%;
+            justify-content: space-between;
+            margin: auto;
+        }
+        
+        #idk {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+        }
+        #col1,
+        #col2 {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 46%;
+            flex-grow: 0;
+
+        }
+        .box {
+            background-color: ;
+            margin: 2px;
+        }
+        #col2 {
+            padding-top: 300px;
+        }
+        #introtext {
+            padding-bottom: 300px;
+
+        }
+        /******* medium devices end ********/
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            body {}
+            #col2 {
+                padding-top: 500px;
+            }
+        }
+        /******* large devices end ********/
+        
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: ;
+            }
+            #col1,
+            #col2 {
+                max-width: 500px;
+            }
+            #col2 {
+                padding-top: 500px;
+            }
+            body {
+                max-width: 1700px;
+                border: 0;
+            }
+        }
+        /******* extra large devices end ********/
+        
+        /* XL, Large, medium devices that are 2 column  */
+        #box1 {}
+        #box2 {
+            line-height: 5;
+            padding-top: 700px;
+        }
+        #box3 {}
+        #box6 {
+            padding-top: 2000px;
+        }
+        #box4 {
+            padding-top: 350px;
+            line-height: 5;
+        }
+        #box5 {
+            padding-top: 1000px;
+        }
+        #col2 {
+            padding-top: 900px;
+        }
+        
+        /******* 2 column end ********/
+        /* small and extra small 1 column  */
+        /******* 1 column end ********/
