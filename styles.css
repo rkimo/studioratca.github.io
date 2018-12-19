@@ -1,30 +1,18 @@
     /*///////// UNIVERSAL CSS /////////*/
 
+
+/*regular*/
     @font-face {
         font-family: 'Futura';
         src: url("/fonts/futura/Futura-Med-Bt.ttf") format('truetype');
         font-weight: normal;
         font-style: normal;
     }
-
+/*regular italic*/
     @font-face {
         font-family: 'Futura';
         src: url("/fonts/futura/Futura-Medium-Italic.ttf") format('truetype');
         font-weight: normal;
-        font-style: italic;
-    }
-
-    @font-face {
-        font-family: 'Futura';
-        src: url("/fonts/futura/Futura-Light-bt.ttf") format('truetype');
-        font-weight: 100;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Futura';
-        src: url("/fonts/futura/Futura-Light-Italic.ttf") format('truetype');
-        font-weight: 100;
         font-style: italic;
     }
 
@@ -36,15 +24,14 @@
     }
 
     @font-face {
-        font-family: 'FuturaHeavy';
-        src: url("/fonts/futura/Futura-Heavy.otf") format('OpenType');
+        font-family: 'FuturaPT';
+        src: url("/fonts/futura/FuturaPT-Demi.ttf") format('truetype');
         font-weight: bold;
         font-style: normal;
     }
-
     @font-face {
-        font-family: 'Futura';
-        src: url("/fonts/futura/Futura-Bold.otf") format('OpenType');
+        font-family: 'FuturaPT';
+        src: url("/fonts/futura/FuturaPT-Demi.otf") format('opentype');
         font-weight: bold;
         font-style: normal;
     }
@@ -87,7 +74,8 @@
     #col1,
     #col2 {
         text-align: center;
-        font-family: futura;
+        font-family: 'Futura';
+        font-weight: bold;
 
     }
 
@@ -153,8 +141,8 @@
     body#contactpageall {
         background-color: #F6CFB8;
         height: 100%;
-        font-family: futura;
-        font-weight: 100;
+        font-family: FuturaPT;
+        font-weight: bold;
     }
 
     #flexwrapper {
