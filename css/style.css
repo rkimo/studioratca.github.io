@@ -1,0 +1,460 @@
+/*fonts*/
+@font-face {
+    font-family: 'Futura';
+    src: url("/fonts/futura/Futura-Med-Bt.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("/fonts/futura/Futura-Medium-Italic.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("/fonts/futura/Futura-Light-bt.ttf") format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url("/fonts/futura/Futura-Light-Italic.ttf") format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FuturaBlack';
+    src: url("/fonts/futura/futura-black-bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url("/fonts/futura/FuturaPT-Demi.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url("/fonts/futura/FuturaPT-Demi.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GrouchBt';
+    src: url("/fonts/grouch/GrouchITC.otf") format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*fonts end*/
+
+/*universal CSS*/
+html {
+    scroll-behavior: smooth;
+
+}
+a {
+    color: black;
+      font-style: normal;
+
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    backface-visibility: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-hamburger {
+    position: static;
+    height: 40px;
+    width: 140px;
+    font-family: 'GrouchBt' !important;
+}
+
+.contentbox {
+    margin: auto;
+    padding: 100px 0;
+    /*  this will be overriden in later media queries for 2 col */
+
+}
+
+img {
+    padding: 100px 0;
+    /*  this will be overriden in later media queries for 2 col */
+}
+
+#maincontainer {
+    /*  double check this on bigger screens  */
+    max-width: 1300px;
+    margin: auto;
+}
+
+footer {
+    height: 300px;
+    font-family: 'GrouchBt';
+    font-weight: light;
+    font-size: 10px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#menuendnotes {
+    margin-top: auto;
+    font-size: 23px;
+    font-family: 'Futura';
+    font-weight: light;
+    line-height: 10px;
+    margin-left: 0 !important;
+
+}
+
+.infobutton {
+    font-family: 'GrouchBt' ;
+    /*    fix this */
+    font-size: 45px;
+     color: #c4c4c4
+}
+a.infobutton:hover, a.infobutton:active
+{
+    color: #000000 !important;
+}
+
+
+#introtitle {
+/*    background-color:lightblue;*/
+    height: 90vh;
+    font-family: 'GrouchBt' !important;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#endnotesemail {
+    margin-top: 6%;
+}
+
+
+
+#img1 {
+    width: 70%;
+    max-width: 400px;
+}
+
+#img2 {
+    width: 60%;
+
+    max-width: 400px;
+}
+
+#img3 {
+    width: 60%;
+    max-width: 400px;
+}
+
+#img4 {
+    width: 100%;
+    max-width: 250px;
+}
+
+#img5 {
+    width: 50%;
+    max-width: 500px;
+}
+
+#img6 {
+    width: 60%;
+    max-width: 500px;
+        min-width: 200px;
+    margin-bottom: -90px;
+}
+
+#img7 {
+    width: 76%;
+    max-width: 500px;
+}
+
+#img8 {
+    width: 60%;
+    max-width: 400px;
+}
+
+#img9 {
+    width: 60%;
+    max-width: 400px;
+    margin-top: -180px;
+}
+
+#img10 {
+    width: 60%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+#img11 {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+/* smaller devices - no parallax */
+.Content {
+    display:flex;
+  flex-direction:column;
+align-items:center;
+}
+.Content * {  /* select all images within class */
+  width:50%;
+  min-width:300px;
+  padding: 10px 0 10px 0;
+}
+.textbox {
+    font-family: 'FuturaPT';
+    weight:;
+    margin-top: 400px;
+    }
+
+
+/*shapes css*/
+.outershapescontainer {
+/*      background-color: green;*/
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+    z-index:1000;
+}
+.shapes {
+    max-width: 15%;
+}
+
+/*shapes css end*/
+
+
+
+/*////////////////////////////  media queries  /////////////////////////*/
+/* Extra small devices (phones, 600px and down) */
+/* keep 1 col */
+@media only screen and (max-width: 600px) {
+    html {}
+    .project-description-text {
+    width:90%;
+    margin:auto;
+    text-align: left;
+}
+    .textbox {            font-size:2em;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* keep 1 col */
+@media only screen and (min-width: 600px) {
+    html {
+    }
+    .project-description-text {
+    width:60%;
+    margin:auto;
+    text-align: left;
+}
+    .textbox {            font-size:2.6em;
+}
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* keep 1 col , iphones go up to 667px */
+@media only screen and (min-width: 768px) {
+    html {}.project-description-text {
+        width:50%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* switch to 2 col */
+@media only screen and (min-width: 992px) {
+    html {
+    }
+
+    #maincontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        padding: 0 0;
+        /*  this is different on earlier 1 col layout  */
+
+    }
+
+    .contentbox {
+        padding: 0 0;
+        /*  this is different on earlier 1 col layout  */
+    }
+
+    #leftside,
+    #rightside {
+        width: 48%;
+    }
+
+    /*/////    space blocks for larger layouts /////*/
+    #img1 {
+        width: 100%;
+        max-width: 400px;
+        padding-top: 400px;
+    }
+
+    #img2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #img3 {
+        width: 100%;
+        max-width: 400px;
+        padding-top: 1000px;
+    }
+
+    #img4 {
+        width: 100%;
+        max-width: 250px;
+        padding-top: 1300px;
+  position: relative;
+  left: -30%;    
+    }
+
+    #img5 {
+        width: 100%;
+        max-width: 500px;
+        padding-top: 400px;
+padding-bottom: 2500px; /*        temp*/
+    }
+    #img6 {
+        width: 60%;
+        max-width: 500px;
+        padding-top: 700px;
+    }
+
+    #img7 {
+        width: 100%;
+        max-width: 500px;
+        padding-top: 1450px;
+    }
+
+    #img8 {
+        width: 100%;
+        max-width: 400px;
+        padding-top: 1000px;
+        padding-bottom: 300px;
+    }
+
+    #img9 {
+        width: 100%;
+        max-width: 400px;
+        padding-bottom: 300px;
+        padding-top: 190px;
+    }
+
+    #img10 {
+        width: 60%;
+        max-width: 500px;
+        padding-top: 200px;
+padding-bottom: 1000px;/* temp*/
+    }
+    #img11 {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* PARALLAX CSS */
+.Content * {
+  width:500px;
+  margin: 30px 0 30px 0;
+  }
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+/* optional margin at bottom to seperate sections */
+  margin-bottom:;
+  position: relative;
+}
+    .textbox {
+  width:50%;        
+
+    }
+.ContentContainer {
+ position: relative;
+  display: block;
+
+  z-index: 1;
+    
+    /* change this for opposite sides */
+  width:50%;
+}
+
+.Content {
+  margin: 0 auto;
+  padding: 75px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+}
+
+.ParallaxContainer {
+  display: flex;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+/* The further the value is from 0 the more pronounced the parallax effect */
+  transform: translateZ(-6px) scale(7);
+    /* change this for opposite sides */
+    justify-content: flex-end;
+}
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {}
+}
+
+/*  media queries end   */
+
+#introtext {
+    font-family: 'FuturaPT';
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.0625em;
+    line-height: 1.1em;
+    letter-spacing: 10;
+    text-align: left;
+    text-align: left;
+    max-width: 375px;
+}
+

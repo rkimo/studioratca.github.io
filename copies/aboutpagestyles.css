@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'FuturaPT';
+    src: url("/fonts/futura/FuturaPT-Demi.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GrouchBt';
+    src: url("/fonts/grouch/GrouchITC.otf") format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*universal css*/
+html {
+    font-family: 'FuturaPT';
+    font-weight: bold;
+    text-align: justify;
+    background-color: #F5CEB7;
+    font-size: 1.4em;
+}
+
+body {
+    margin: 0;
+    font-size: .87em;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: black;
+}
+p {
+}
+
+#main {
+    background-color:lightblue;
+    height:100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#end-bio {
+    justify-content: flex-end;
+}
+#arrow {
+    width: 10%;
+    position: absolute;
+    z-index: 3000;
+    
+}
+    #studioemail {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-decoration: none;
+    }
+
+
+/*smaller devices first*/
+#verticalcenterAll {}
+
+#main {
+    height: 100vh;
+    width: 80vw;
+}
+
+#canvas {
+    display: none;
+}
+
+/*universal css end*/
+
+
+
+
+
+
+
+/*////////////////////////////  media queries  /////////////////////////*/
+/* Extra small devices (phones, 600px and down) */
+/* keep 1 col */
+@media only screen and (max-width: 600px) {
+    html {}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* keep 1 col */
+@media only screen and (min-width: 600px) {
+    html {
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* keep 1 col , iphones go up to 667px */
+@media only screen and (min-width: 768px) {
+    html {}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* switch to 2 col */
+@media only screen and (min-width: 992px) {
+    html {
+    }
+        #main {
+        width: 70vw;
+        max-width: 730px;
+    }
+
+    #arrow {
+        position: absolute;
+    }
+
+    #verticalcenterAll {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #etc {
+        display:block;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    #canvas {
+        display: block;
+        z-index: 100;
+                position:absolute;
+
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
