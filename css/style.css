@@ -294,7 +294,6 @@ a.infobutton:active {
     height:500px;
     width:500px;
 /*    background-color:aqua;*/
-    opacity: 0.5;
     margin:auto;
     position: fixed;
     z-index: 4000;
@@ -511,7 +510,6 @@ a.infobutton:active {
         width: 50%;
 /*        background-color: pink;*/
         align-content: flex-start;
-        opacity: 0.5;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -520,7 +518,6 @@ a.infobutton:active {
     .right {
         width: 100%;
 /*        background-color: pink;*/
-        opacity: 0.5;
         padding-left: 49%;
         display: flex;
         flex-direction: column;
