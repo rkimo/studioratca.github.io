@@ -43,6 +43,7 @@ template {
 }
 
 a {
+    background-color: transparent
 }
 
 a:active,
@@ -70,6 +71,7 @@ h1 {
 
 mark {
     background: #ff0;
+    color: #000;
 }
 
 small {
@@ -121,19 +123,20 @@ samp {
     font-size: 1em
 }
 
-button,
 input,
 optgroup,
 select,
 textarea {
+    color: inherit;
+    font: inherit;
     margin: 0
 }
 
 button {
-    overflow: visible
+/*    overflow: visible*/
 }
 
-button,
+
 select {
     text-transform: none
 }
@@ -149,6 +152,9 @@ input[type=submit] {
 button[disabled],
 html input[disabled] {
     cursor: default
+}
+.button:hover {
+    color:black;
 }
 
 button::-moz-focus-inner,
@@ -272,9 +278,11 @@ pre[class*=language-] {
 .token.comment,
 .token.doctype,
 .token.prolog {
+    color: #708090
 }
 
 .token.punctuation {
+    color: #999
 }
 
 .namespace {
@@ -395,6 +403,7 @@ body,
     font-size: 50px;
     line-height: 1em;
     width: 400px;
+
 }
 
 a {
@@ -402,21 +411,24 @@ a {
 }
 
 .menu a {
+    color: black;
 }
 
 .menu a:hover {
-    text-decoration: underline;
 }
 
 .menu-section {
     /*    margin: 25px 0;*/
     height: 100%;
+    font-weight: bold;
+
 
 
 }
 
 .menu-section-title {
     text-transform: uppercase;
+    color: #85888d;
     font-weight: 200;
     font-size: 13px;
     letter-spacing: 1px;
@@ -432,6 +444,7 @@ a {
     height: 95%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .menu-section-list a {
@@ -538,17 +551,7 @@ a {
     display: none;
 }
 
-/**
- * hamburger
- */
-.btn-hamburger {
-    border: none;
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    outline: none;
-    background: url('../assets/menu.png') no-repeat left center;
-}
+
 
 .tooltip {
     font-size: 20px;
@@ -623,10 +626,7 @@ a {
  */
 @media all and (min-width:40em) {
 
-    .btn-hamburger {
-        top: 20px;
-        left: 30px;
-    }
+
 
     .panel-header {
         margin-top: 40px;
@@ -665,6 +665,7 @@ a {
  * Large Screens
  */
 @media all and (min-width: 54em) {
+
     .box {
         width: 70%;
         max-width: 1200px;
@@ -698,19 +699,7 @@ a {
     text-decoration: none;
 }
 
-.share-buttons {
-    display: block;
-    margin: 20px auto 0;
-    padding: 15px 20px 5px;
-    width: 200px;
-    overflow: hidden;
-}
 
-#github-button {
-    float: left;
-    width: 112px;
-    margin-left: 10px;
-}
 
 /**
  * Slideout module styles

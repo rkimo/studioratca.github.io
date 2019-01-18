@@ -19,12 +19,7 @@
     font-weight: light;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Futura';
-    src: url("/fonts/futura/Futura-Light-Italic.ttf") format('truetype');
-    font-weight: light;
-    font-style: italic;
-}
+
 @font-face {
     font-family: 'FuturaBlack';
     src: url("/fonts/futura/futura-black-bold.ttf") format('truetype');
@@ -58,12 +53,10 @@
 /*universal CSS*/
 html {
     scroll-behavior: smooth;
-
 }
+
 a {
     color: black;
-      font-style: normal;
-
 }
 
 .fixed-header {
@@ -72,19 +65,32 @@ a {
     height: 90px;
     backface-visibility: hidden;
     z-index: 2;
+    /*    background-color: red;*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 2%;
 }
 
-.btn-hamburger {
-    position: static;
-    height: 40px;
-    width: 140px;
+input,
+button,
+submit {
+    border: none;
     font-family: 'GrouchBt' !important;
+    font-size: 4em;
+
 }
+
+#menu-link {
+    font-family: 'GrouchBt' !important;
+    color: lightgray;
+    padding-right: .8em;
+}
+
 
 .contentbox {
+    /*    background-color: pink;*/
+    margin: 10px 0;
     margin: auto;
     padding: 100px 0;
     /*  this will be overriden in later media queries for 2 col */
@@ -97,6 +103,7 @@ img {
 }
 
 #maincontainer {
+    /*    background-color: lightyellow;*/
     /*  double check this on bigger screens  */
     max-width: 1300px;
     margin: auto;
@@ -104,19 +111,21 @@ img {
 
 footer {
     height: 300px;
+    font-size: 12px;
     font-family: 'GrouchBt';
     font-weight: light;
-    font-size: 10px;
     display: flex;
     margin: auto;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+
 }
 
 #menu {
     display: flex;
     flex-direction: column;
+
 }
 
 #menuendnotes {
@@ -129,20 +138,20 @@ footer {
 
 }
 
-.infobutton {
-    font-family: 'GrouchBt' ;
+#infobutton {
+    color: lightgrey;
+    font-family: 'GrouchBt' !important;
     /*    fix this */
-    font-size: 45px;
-     color: #c4c4c4
-}
-a.infobutton:hover, a.infobutton:active
-{
-    color: #000000 !important;
+    font-size: 50px;
 }
 
+a.infobutton:hover,
+a.infobutton:active {
+    color: black !important;
+
+}
 
 #introtitle {
-/*    background-color:lightblue;*/
     height: 90vh;
     font-family: 'GrouchBt' !important;
     color: black;
@@ -155,6 +164,25 @@ a.infobutton:hover, a.infobutton:active
 
 #endnotesemail {
     margin-top: 6%;
+}
+
+.project-description-text {
+    font-family: 'Futura';
+    font-weight: bold;
+    width: 35%;
+    min-width: 300px;
+    text-align: right;
+    font-size: 1.9em;
+    line-height: 2em;
+    z-index: 2000;
+    margin: auto;
+    max-width: 230px;
+
+}
+
+.project-description-text a:link {
+    color: black;
+    text-decoration: underline;
 }
 
 
@@ -186,10 +214,9 @@ a.infobutton:hover, a.infobutton:active
 }
 
 #img6 {
-    width: 60%;
+    width: 50%;
     max-width: 500px;
-        min-width: 200px;
-    margin-bottom: -90px;
+    margin-bottom: -190px;
 }
 
 #img7 {
@@ -209,8 +236,7 @@ a.infobutton:hover, a.infobutton:active
 }
 
 #img10 {
-    width: 60%;
-    min-width: 200px;
+    width: 50%;
     max-width: 500px;
 }
 
@@ -219,82 +245,103 @@ a.infobutton:hover, a.infobutton:active
     max-width: 300px;
 }
 
-
-
-/* smaller devices - no parallax */
-.Content {
-    display:flex;
-  flex-direction:column;
-align-items:center;
+#miscdiv {
+    height: 500px;
+    /* make larger in 2 col*/
+/*    background-color: pink;*/
 }
-.Content * {  /* select all images within class */
-  width:50%;
-  min-width:300px;
-  padding: 10px 0 10px 0;
+
+.rightsideimages {}
+
+.right {
+    width: %;
 }
-.textbox {
-    font-family: 'FuturaPT';
-    weight:;
-    margin-top: 400px;
-    }
+
+.right img {
+    margin: ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+.left img {
+    margin: auto;
+    width: 80%;
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 0;
+}
+
+.right {}
+
+.left {
+    width: 100%;
+}
+
+.parallax {
+    margin: auto;
+    width: 100%;
+    text-align: ;
+/*    background-color: azure;*/
+}
+
+.testdiv {
+    height:500px;
+    width:500px;
+/*    background-color:aqua;*/
+    opacity: 0.5;
+    margin:auto;
+    position: fixed;
+    z-index: 4000;
+}
 
 
+/*shapes css*/
 /*shapes css*/
 .outershapescontainer {
 /*      background-color: green;*/
   width: 100vw;
   height: 100vh;
-  position: fixed;
     z-index:1000;
+    display: none;
 }
 .shapes {
     max-width: 15%;
 }
 
 /*shapes css end*/
+/*shapes css end*/
 
 
 
-/*////////////////////////////  media queries  /////////////////////////*/
-/* Extra small devices (phones, 600px and down) */
-/* keep 1 col */
+
+
+/* Extra small devices (phones, 600px and down),keep 1 col */
 @media only screen and (max-width: 600px) {
     html {}
-    .project-description-text {
-    width:90%;
-    margin:auto;
-    text-align: left;
-}
-    .textbox {            font-size:2em;
-}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* keep 1 col */
 @media only screen and (min-width: 600px) {
     html {
+/*        background-color: lightblue;*/
     }
-    .project-description-text {
-    width:60%;
-    margin:auto;
-    text-align: left;
-}
-    .textbox {            font-size:2.6em;
-}
-    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* keep 1 col , iphones go up to 667px */
 @media only screen and (min-width: 768px) {
-    html {}.project-description-text {
-        width:50%;}
+    html {}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* switch to 2 col */
+/* Large devices (laptops/desktops, 992px and up) /* switch to 2 col */
 @media only screen and (min-width: 992px) {
     html {
+/*        background-color: lightblue;*/
     }
 
     #maincontainer {
@@ -305,7 +352,6 @@ align-items:center;
     img {
         padding: 0 0;
         /*  this is different on earlier 1 col layout  */
-
     }
 
     .contentbox {
@@ -315,6 +361,7 @@ align-items:center;
 
     #leftside,
     #rightside {
+        /*        background-color: red;*/
         width: 48%;
     }
 
@@ -340,18 +387,20 @@ align-items:center;
         width: 100%;
         max-width: 250px;
         padding-top: 1300px;
-  position: relative;
-  left: -30%;    
+        position: relative;
+        left: -32%;
     }
 
     #img5 {
         width: 100%;
         max-width: 500px;
         padding-top: 400px;
-padding-bottom: 2500px; /*        temp*/
+        padding-bottom: 2500px;
+        /*        temp*/
     }
+
     #img6 {
-        width: 60%;
+        width: 100%;
         max-width: 500px;
         padding-top: 700px;
     }
@@ -377,63 +426,112 @@ padding-bottom: 2500px; /*        temp*/
     }
 
     #img10 {
-        width: 60%;
+        width: 100%;
         max-width: 500px;
         padding-top: 200px;
-padding-bottom: 1000px;/* temp*/
+        padding-bottom: 1000px;
+        /* temp*/
     }
+
     #img11 {
         width: 100%;
         max-width: 300px;
     }
-    
-    /* PARALLAX CSS */
-.Content * {
-  width:500px;
-  margin: 30px 0 30px 0;
-  }
-.MainContainer {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-/* optional margin at bottom to seperate sections */
-  margin-bottom:;
-  position: relative;
-}
-    .textbox {
-  width:50%;        
+
+    .right img {
+        width: 500px;
+        height: auto;
+        margin: inherit;
+    }
+
+    .left img {
+        width: 400px;
+    }
+
+    #introtext {
+        font-family: 'FuturaPT';
+        font-weight: bold;
+        font-size: 2.4em;
+        letter-spacing: 0.0625em;
+        line-height: 1.4em;
+        letter-spacing: 10;
+        text-align: left;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .project-description-text {
+        max-width: 350px;
+        margin: 0% 0% 0% 10%;
+        z-index: 2000;
 
     }
-.ContentContainer {
- position: relative;
-  display: block;
 
-  z-index: 1;
-    
-    /* change this for opposite sides */
-  width:50%;
-}
+    /* Parallax base styles
+  --------------------------------------------- */
+    .parallax {
+        margin: auto;
+        width: 90%;
+        min-width: 700px;
+        max-width: 1400px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-perspective: 1px;
+        perspective: 1px;
+    }
 
-.Content {
-  margin: 0 auto;
-  padding: 75px 0;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-}
+    .parallax__layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 
-.ParallaxContainer {
-  display: flex;
-  position: relative;
-  z-index: -1;
-  height: 100vh;
-/* The further the value is from 0 the more pronounced the parallax effect */
-  transform: translateZ(-6px) scale(7);
-    /* change this for opposite sides */
-    justify-content: flex-end;
-}
+    .parallax__layer--base {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .parallax__layer--back {
+        -webkit-transform: translateZ(-1px) scale(2);
+        transform: translateZ(-1px) scale(2);
+    }
+
+    .parallax__layer {
+        /* add some padding to force scrollbars */
+
+        padding: 100vh 0;
+    }
+
+    .left {
+        /* centre or align the content in the parallax layers */
+
+        width: 50%;
+/*        background-color: pink;*/
+        align-content: flex-start;
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .right {
+        width: 100%;
+/*        background-color: pink;*/
+        opacity: 0.5;
+        padding-left: 49%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*    parallax css end*/
+    .project-description-text {
+        font-size: 2em;
+        max-width: 200px;
+    }
+    #introtext{width: 100%;}
 
 }
 
@@ -444,17 +542,17 @@ padding-bottom: 1000px;/* temp*/
     html {}
 }
 
-/*  media queries end   */
 
-#introtext {
-    font-family: 'FuturaPT';
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 0.0625em;
-    line-height: 1.1em;
-    letter-spacing: 10;
-    text-align: left;
-    text-align: left;
-    max-width: 375px;
+.inline-link {
+    display: inline;
+    text-decoration: underline;
 }
 
+a {}
+
+
+
+.menulink {
+    font-family: 'FuturaPT';
+    font-weight: bold;
+}
