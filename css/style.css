@@ -51,6 +51,13 @@
 /*fonts end*/
 
 /*universal CSS*/
+#temp-overlay {
+    position: fixed;
+    z-index:2;
+    width:110vw;
+    display:grid;
+    margin-left: -75px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -306,7 +313,7 @@ a.infobutton:active {
 /*      background-color: green;*/
   width: 100vw;
   height: 100vh;
-    z-index:1000;
+    z-index:2;
     display: none;
 }
 .shapes {
@@ -532,6 +539,7 @@ a.infobutton:active {
 
 }
 
+/*      --bgImage: url("https://i.imgur.com/ZoWEHGm.jpg");*/
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
