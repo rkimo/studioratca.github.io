@@ -146,7 +146,8 @@ html input[type=button],
 input[type=reset],
 input[type=submit] {
     -webkit-appearance: button;
-    cursor: pointer
+    cursor: pointer;
+    background-color:white;
 }
 
 button[disabled],
@@ -169,7 +170,6 @@ input {
 
 input[type=checkbox],
 input[type=radio] {
-    box-sizing: border-box;
     padding: 0
 }
 
@@ -278,11 +278,11 @@ pre[class*=language-] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-    color: #708090
+    color: #708090;
 }
 
 .token.punctuation {
-    color: #999
+    color: #999;
 }
 
 .namespace {
@@ -484,7 +484,7 @@ a {
     font-size: 1.3em;
     line-height: 1.2em;
     margin: 0 0 45px 0;
-    color: #767676;
+    color: ;
 }
 
 /**

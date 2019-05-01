@@ -90,7 +90,7 @@ submit {
 
 #menu-link {
     font-family: 'GrouchBt' !important;
-    color: lightgray;
+   color: lightgray; /*  this one fine*/
     padding-right: .8em;
 }
 
