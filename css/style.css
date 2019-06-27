@@ -92,6 +92,7 @@ submit {
     font-family: 'GrouchBt' !important;
    color: lightgray; /*  this one fine*/
     padding-right: .8em;
+    z-index: 1000;
 }
 
 
@@ -132,7 +133,6 @@ footer {
 #menu {
     display: flex;
     flex-direction: column;
-
 }
 
 #menuendnotes {
@@ -309,15 +309,41 @@ a.infobutton:active {
 
 /*shapes css*/
 /*shapes css*/
-.outershapescontainer {
-/*      background-color: green;*/
-  width: 100vw;
-  height: 100vh;
-    z-index:2;
-    display: none;
+ 
+#shapesContain {
+    position: fixed;
+    left: 25%;
+    right: 25%;
+    background-color: green;
+    z-index: 100;
 }
-.shapes {
-    max-width: 15%;
+#newoverlay {
+    position:fixed;
+    height:100vh;
+    width:100vw;
+}
+
+
+
+#shapesContain > img {
+    /*    media query for smaller screens below to override*/
+    -ms-transform: scale(0.33, 0.33);
+    /* IE 9 */
+    -webkit-transform: scale(0.33, 0.33);
+    /* Safari */
+    transform: scale(0.33, 0.33);
+    position: absolute;
+}
+@media only screen and (max-width : 750px) {
+    #shapesContain > img {
+    
+    -ms-transform: scale(0.25, 0.25);
+    /* IE 9 */
+    -webkit-transform: scale(0.25, 0.25);
+    /* Safari */
+    transform: scale(0.25, 0.25);
+    position: absolute;
+        }
 }
 
 /*shapes css end*/
