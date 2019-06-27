@@ -7,8 +7,6 @@ var timeline = new TimelineMax({
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 
-document.write("</br>window width  " + windowWidth);
-document.write("</br>window height  " + windowHeight);
 
 Draggable.create(".shapes", {
     throwProps: true
